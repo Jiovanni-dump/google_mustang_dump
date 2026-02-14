@@ -1,0 +1,14 @@
+# generic_system_google-user CinnamonBun CP21.260116.011.B1 14876373 release-keys
+- manufacturer: google
+- platform: laguna
+- codename: mustang
+- flavor: generic_system_google-user
+- release: 16
+- id: CP21.260116.011.B1
+- incremental: 14876373
+- tags: release-keys
+- fingerprint: google/mustang_beta/mustang:CinnamonBun/CP21.260116.011.B1/14876373:user/release-keys
+- is_ab: true
+- brand: google
+- branch: generic_system_google-user-CinnamonBun-CP21.260116.011.B1-14876373-release-keys
+- repo: google_mustang_dump
