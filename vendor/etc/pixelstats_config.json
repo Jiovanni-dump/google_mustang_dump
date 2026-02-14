@@ -1,0 +1,308 @@
+{
+  "SlowioReadCntPath": "/dev/sys/block/bootdevice/slowio_read_cnt",
+  "SlowioWriteCntPath": "/dev/sys/block/bootdevice/slowio_write_cnt",
+  "SlowioUnmapCntPath": "/dev/sys/block/bootdevice/slowio_unmap_cnt",
+  "SlowioSyncCntPath": "/dev/sys/block/bootdevice/slowio_sync_cnt",
+  "CycleCountBinsPath": "/sys/class/power_supply/battery/cycle_counts",
+  "UFSLifetimeA": "/dev/sys/block/bootdevice/health_descriptor/life_time_estimation_a",
+  "UFSLifetimeB": "/dev/sys/block/bootdevice/health_descriptor/life_time_estimation_b",
+  "UFSLifetimeC": "/dev/sys/block/bootdevice/health_descriptor/life_time_estimation_c",
+  "F2fsStatsPath": "/sys/fs/f2fs/",
+  "ImpedancePath": "/sys/devices/platform/audiometrics/speaker_impedance",
+  "CodecPath": "/sys/devices/platform/audiometrics/codec_state",
+  "EEPROMPath": "/dev/battery_history",
+  "PowerMitigationStatsPath": "/sys/devices/virtual/pmic/mitigation",
+  "BrownoutReasonProp": "vendor.brownout_reason",
+  "BrownoutCsvPath": "/data/vendor/mitigation/lastmeal.csv",
+  "BrownoutLogPath": "/data/vendor/mitigation/lastmeal.txt",
+  "SpeakerTemperaturePath": "/sys/devices/platform/audiometrics/speaker_temp",
+  "SpeakerExcursionPath": "/sys/devices/platform/audiometrics/speaker_excursion",
+  "SpeakerHeartBeatPath": "/sys/devices/platform/audiometrics/speaker_heartbeat",
+  "UFSErrStatsPath": [
+    "/dev/sys/block/bootdevice/err_stats/pa_err_count",
+    "/dev/sys/block/bootdevice/err_stats/dl_err_count",
+    "/dev/sys/block/bootdevice/err_stats/nl_err_count",
+    "/dev/sys/block/bootdevice/err_stats/tl_err_count",
+    "/dev/sys/block/bootdevice/err_stats/dme_err_count",
+    "/dev/sys/block/bootdevice/err_stats/fatal_err_count",
+    "/dev/sys/block/bootdevice/err_stats/auto_hibern8_err_count"
+  ],
+  "AmsRatePath": "/sys/devices/platform/audiometrics/ams_rate_read_once",
+  "ResumeLatencyMetricsPath": "/sys/kernel/metrics/resume_latency/resume_latency_metrics",
+  "LongIRQMetricsPath": "/sys/kernel/metrics/irq/long_irq_metrics",
+  "StormIRQMetricsPath": "/sys/kernel/metrics/irq/storm_irq_metrics",
+  "IRQStatsResetPath": "/sys/kernel/metrics/irq/stats_reset",
+  "ThermalTjTripCounterConfig": [
+    {
+      "Name": "AOC",
+      "TripNumbers": [0],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_AOC",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/AOC/reset_trip_cnt"
+    },
+    {
+      "Name": "AUR",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_AUR",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/AUR/reset_trip_cnt"
+    },
+    {
+      "Name": "BIG",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_BIG",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG/reset_trip_cnt"
+    },
+    {
+      "Name": "BIG_MID",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_BIG_MID",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG_MID/reset_trip_cnt"
+    },
+    {
+      "Name": "GPU",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_GPU",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/GPU/reset_trip_cnt"
+    },
+    {
+      "Name": "LITTLE",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_LITTLE",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/LITTLE/reset_trip_cnt"
+    },
+    {
+      "Name": "MID",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_MID",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/MID/reset_trip_cnt"
+    },
+    {
+      "Name": "TPU",
+      "TripNumbers": [5, 6, 7],
+      "ReadPath": "/sys/devices/platform/tmu_thermal/trip_counter_TPU",
+      "ResetPath": "/sys/firmware/mbfs_root/cpm/thermal/tj/TPU/reset_trip_cnt"
+    }
+  ],
+  "ThermalTjSensorErrorCountConfig": [
+    {
+      "Name": "AOC",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/AOC/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/AOC/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/AOC/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "AUR",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/AUR/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/AUR/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/AUR/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "BIG",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "BIG_MID",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG_MID/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG_MID/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/BIG_MID/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "GPU",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/GPU/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/GPU/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/GPU/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "LITTLE",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/LITTLE/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/LITTLE/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/LITTLE/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "MID",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/MID/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/MID/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/MID/tz_err_cnt_2"
+      ]
+    },
+    {
+      "Name": "TPU",
+      "ErrorPaths": [
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/TPU/tz_err_cnt_0",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/TPU/tz_err_cnt_1",
+        "/sys/firmware/mbfs_root/cpm/thermal/tj/TPU/tz_err_cnt_2"
+      ]
+    }
+  ],
+  "TempResidencyAndResetPaths": [
+    [
+      "/sys/kernel/metrics/thermal/tr_by_group/tmu/stats",
+      "/sys/kernel/metrics/thermal/tr_by_group/tmu/stats_reset"
+    ],
+    [
+      "/sys/kernel/metrics/thermal/tr_by_group/spmic/stats",
+      "/sys/kernel/metrics/thermal/tr_by_group/spmic/stats_reset"
+    ]
+  ],
+  "ModemPcieLinkStatsPath": "/sys/devices/platform/12100000.pcie/link_stats",
+  "WifiPcieLinkStatsPath": "/sys/devices/platform/13120000.pcie/link_stats",
+  "WaterEventPaths": [
+    "/sys/bus/i2c/drivers/h2omg/44-0070",
+    "/sys/bus/i2c/drivers/h2omg/44-0071"
+  ],
+  "GMSRPath": [
+    "/sys/class/power_supply/max77779fg/gmsr",
+    "/sys/class/power_supply/maxfg_base/gmsr"
+  ],
+  "FGModelLoadingPath": [
+    "/sys/class/power_supply/max77779fg/model_state",
+    "/sys/class/power_supply/maxfg_base/model_state"
+  ],
+  "FGLogBufferPath": [
+    "/dev/logbuffer_maxfg_monitor",
+    "/dev/logbuffer_max77779fg_monitor",
+    "/dev/logbuffer_maxfg_base_monitor",
+    "/dev/logbuffer_maxfg_secondary_monitor"
+  ],
+  "AudioUevent": "/devices/virtual/amcs/amcs",
+  "TypeCPartnerUevent": "PRODUCT_TYPE=",
+  "FwUpdatePath": [
+    "/dev/logbuffer_max77779_fwupdate",
+    "/dev/logbuffer_wlc_fw_update"
+  ],
+  "FGAbnlPath": [
+    "/dev/logbuffer_max77779fg_monitor",
+    "/dev/logbuffer_maxfg_base_monitor",
+    "/dev/logbuffer_maxfg_secondary_monitor"
+  ],
+  "DisplayPortStatsPaths": [
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/link_negotiation_failures",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/edid_read_failures",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/dpcd_read_failures",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/edid_invalid_failures",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/sink_count_invalid_failures",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/link_unstable_failures",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/connection_success",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/connection_failure"
+  ],
+  "DisplayPortDSCStatsPaths": [
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/fec_dsc_supported",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/fec_dsc_not_supported"
+  ],
+  "DisplayPortMaxResolutionStatsPaths": [
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_other",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_1366_768",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_1440_900",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_1600_900",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_1920_1080",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_2560_1080",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_2560_1440",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_3440_1440",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_3840_2160",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_5120_2880",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-displayport-stats/max_res_7680_4320"
+  ],
+  "DisplayStatsPaths": [
+    "/sys/class/drm/card0/device/primary-panel/error_count_te",
+    "/sys/class/drm/card0/device/primary-panel/error_count_unknown",
+    "/sys/class/drm/card0/device/secondary-panel/error_count_te",
+    "/sys/class/drm/card0/device/secondary-panel/error_count_unknown",
+    "/sys/class/drm/card0/device/primary-panel/panel_extinfo",
+    "/sys/class/drm/card0/device/primary-panel/panel_error_stats/",
+    "/sys/class/drm/card0/device/secondary-panel/panel_extinfo",
+    "/sys/class/drm/card0/device/secondary-panel/panel_error_stats/",
+    "/sys/class/drm/card0/device/primary-panel/gram_collision_count",
+    "/sys/class/drm/card0/device/secondary-panel/gram_collision_count"
+  ],
+  "DisplayStatsErrorType": [
+    "dsi_sot",
+    "dsi_sot_sync",
+    "dsi_eot_sync",
+    "dsi_escape_mode_entry",
+    "dsi_lp_xmit_sync",
+    "dsi_hs_rx_timeout",
+    "dsi_false_control",
+    "dsi_data_lane_contention",
+    "dsi_ecc_single",
+    "dsi_ecc_multi",
+    "dsi_checksum",
+    "dsi_data_type",
+    "dsi_vc_id_invalid",
+    "dsi_xmit_len",
+    "dsi_reserved",
+    "dsi_protocol_violation",
+    "dsi_read_failure",
+    "vlin1",
+    "te",
+    "pps",
+    "checksum",
+    "esd",
+    "disp_invalid",
+    "vgh",
+    "gram_collision"
+  ],
+  "HDCPStatsPaths": [
+    "/sys/devices/platform/c600000.dwc_dptx/drm-hdcp/hdcp2_success_count",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-hdcp/hdcp2_fallback_count",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-hdcp/hdcp2_fail_count",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-hdcp/hdcp1_success_count",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-hdcp/hdcp1_fail_count",
+    "/sys/devices/platform/c600000.dwc_dptx/drm-hdcp/hdcp0_count"
+  ],
+  "FGRegDumpPath": [
+    "/sys/class/power_supply/maxfg/registers_dump",
+    "/sys/class/power_supply/max77779fg/registers_dump",
+    "/sys/class/power_supply/maxfg_base/registers_dump",
+    "/sys/class/power_supply/maxfg_secondary/registers_dump"
+  ],
+  "SSRestartPath": "/data/vendor/ssrdump",
+  "HardwareComponentInfoConfig": {
+    "APPLICATION_PROCESSOR": {
+      "vendor": {"Source": "Property", "Path": "ro.soc.manufacturer"},
+      "hw_version": {"Source": "Property", "Path": "ro.boot.hw.soc.rev"}
+    },
+    "MEMORY": {
+      "vendor": {"Source":  "Property", "Path": "ro.boot.ddr_info"},
+      "size": {"Source":  "Property", "Path": "ro.boot.ddr_size"}
+    },
+    "STORAGE": {
+      "vendor": {"Source":  "File", "Path": "/sys/bus/scsi/devices/0:0:0:0/vendor"},
+      "size": {"Source":  "Property", "Path": "ro.boot.hardware.ufs"},
+      "sw_version": {"Source":  "File", "Path": "/sys/bus/scsi/devices/0:0:0:0/rev"}
+    },
+    "DISPLAY": {
+      "vendor": {"Source":  "File", "Path": "/sys/devices/platform/sswrp_dpu@ec00000/sswrp_dpu@ec00000:display-subsystem/primary-panel/panel_name"},
+      "serial_number": {"Source":  "File", "Path": "/sys/devices/platform/sswrp_dpu@ec00000/sswrp_dpu@ec00000:display-subsystem/primary-panel/serial_number"}
+    },
+    "BATTERY": {
+      "size": {"Source":  "File", "Path": "/sys/class/power_supply/battery/charge_full_design"},
+      "serial_number": {"Source": "File", "Paths": [
+        "/sys/class/power_supply/maxfg_base/serial_number",
+        "/sys/class/power_supply/max77779fg/serial_number",
+        "/sys/class/power_supply/maxfg/serial_number"
+      ]}
+    },
+    "BATTERY_SECONDARY": {
+      "size": {"Source":  "File", "Path": "/sys/class/power_supply/battery/charge_full_design"},
+      "serial_number": {"Source": "File", "Path": "/sys/class/power_supply/maxfg_secondary/serial_number", "Required":  true}
+    },
+    "DISPLAY_SECONDARY": {
+      "vendor": {"Source":  "File", "Path": "/sys/devices/platform/sswrp_dpu@ec00000/sswrp_dpu@ec00000:display-subsystem/secondary-panel/panel_name"},
+      "serial_number": {"Source":  "File", "Path": "/sys/devices/platform/sswrp_dpu@ec00000/sswrp_dpu@ec00000:display-subsystem/secondary-panel/serial_number", "Required":  true}
+    }
+  }
+}
