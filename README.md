@@ -1,0 +1,14 @@
+# generic_system_google-user 16 CP1A.260405.005 15001963 release-keys
+- manufacturer: google
+- platform: laguna
+- codename: mustang
+- flavor: generic_system_google-user
+- release: 16
+- id: CP1A.260405.005
+- incremental: 15001963
+- tags: release-keys
+- fingerprint: google/mustang/mustang:16/CP1A.260405.005/15001963:user/release-keys
+- is_ab: true
+- brand: google
+- branch: generic_system_google-user-16-CP1A.260405.005-15001963-release-keys
+- repo: google_mustang_dump
